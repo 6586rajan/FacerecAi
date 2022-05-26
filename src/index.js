@@ -7,7 +7,6 @@ import 'tachyons'
 
 ReactDOM.render(
   <React.StrictMode>
-    <title>Facial Recognition App</title>
     <App/>
   </React.StrictMode>,
   document.getElementById('root')
