@@ -1,0 +1,54 @@
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  } 
+   
+  .btn:hover .btn-slide-show-text1 {
+    margin-left: 65px;
+  } 
+   
+  .btn-fill-bottom {
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    position: relative;
+    left: -7%;
+    overflow: hidden;
+    transition: color 0.5s ease 0s;
+  } 
+   
+  .btn-fill-bottom::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s ease 0s;
+  } 
+   
+  .btn-fill-bottom:hover {
+    color: rgb(111, 0, 255);
+  } 
+   
+  .btn-fill-bottom:hover::before {
+    top: -40px;
+    left: -40px;
+  } 
+   
+  .btn-fill-bottom--green {
+    color: rgba(23,205,205,1);
+    border: 2px solid rgba(23,205,205,1);
+  } 
+   
+  .btn-fill-bottom--green::before {
+    background: rgba(23,205,205,1);
+  } 
+   
